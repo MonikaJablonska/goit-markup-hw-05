@@ -181,6 +181,24 @@ img {
   justify-content: space-between;
 }
 
+.what-we-do-item {
+  position: relative;
+}
+
+.what-we-do-text {
+  position: absolute;
+  inset: auto 0 0 0;
+  /* bottom: 0;
+  left: 0;
+  right: 0; */
+  padding: 27px 0;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--light-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
 /* Our team */
 
 .our-team {
