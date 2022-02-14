@@ -469,7 +469,7 @@ img {
 
 /* PORTFOLIO */
 
-/* section projects */
+/* section our projects */
 
 .container-our-projects {
   margin-top: 94px;
@@ -496,8 +496,11 @@ img {
 }
 
 .list-projects-item {
+  position: relative;
+  overflow: hidden;
   margin-bottom: 30px;
   border: 1px solid var(--border-projects-item-color);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-projects-item:hover {
@@ -505,8 +508,14 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.list-projects-item:hover .our-projects-info {
+  transform: translateY(0%);
+}
 .list-projects-item-content {
-  margin: 20px 24px;
+  padding: 20px 24px;
+  background-color: var(--light-color);
+  position: relative;
+  z-index: 1;
 }
 
 .header-3-project {
@@ -515,6 +524,20 @@ img {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+
+.our-projects-info {
+  position: absolute;
+  transform: translateY(100%);
+  top: 0;
+  bottom: 110px;
+  padding: 49px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: var(--light-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-backdrop {
